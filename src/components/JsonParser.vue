@@ -2,7 +2,7 @@
   import { ref } from 'vue'
 
   let jsonString = ref('')
-  let parsedJson = ref(null)
+  let parsedJson = ref('')
 
   const parseJson = () => {
     try {
