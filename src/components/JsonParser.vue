@@ -32,7 +32,6 @@
       :value="parsedJson"
       :expand-depth="5"
       copyable
-      boxed
       sort
     ></json-viewer>
   </div>
