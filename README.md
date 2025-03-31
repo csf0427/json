@@ -3,4 +3,4 @@
 
 使用 vite + vue + ts ， node 22.13.0
 
-綿上網址： https://json.waws.idv.tw
+綿上網址： <a href="https://json.waws.idv.tw/" target="_blank">https://json.waws.idv.tw/</a>
