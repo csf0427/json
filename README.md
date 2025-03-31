@@ -2,3 +2,5 @@
 通常是自己在用的
 
 使用 vite + vue + ts ， node 22.13.0
+
+綿上網址： https://json.waws.idv.tw
