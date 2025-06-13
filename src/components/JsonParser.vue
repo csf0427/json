@@ -1,23 +1,8 @@
 <script setup lang="ts">
-  import { ref } from 'vue'
   import JsonViewer from 'vue-json-viewer'
+  import { useJsonParser } from '@/composables/useJsonParser'
 
-  let jsonString = ref('')
-  let parsedJson = ref('請在左側輸入 JSON 字串')
-
-  const parseJson = () => {
-    if (jsonString.value === '') {
-      parsedJson.value = '請在左側輸入 JSON 字串'
-      return
-    }
-
-    try {
-      // 嘗試直接解析
-      parsedJson.value = JSON.parse(jsonString.value)
-    } catch (error) {
-      parsedJson.value = 'Invalid JSON'
-    }
-  }
+  const { jsonString, parsedJson } = useJsonParser()
 </script>
 
 <template>
@@ -25,7 +10,6 @@
     <textarea
       class="json-string"
       v-model="jsonString"
-      @input="parseJson"
       placeholder="在此輸入 JSON 字串"
     ></textarea>
     <json-viewer
